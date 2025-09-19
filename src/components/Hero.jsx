@@ -41,7 +41,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed"
             >
-              Transforme seu negócio em uma <strong>máquina de vendas online</strong>! 
+              Transforme seu negócio ONLINE em uma <strong>máquina de vendas online</strong>! 
               Criamos sites profissionais que aparecem no Google e convertem visitantes em clientes.
             </motion.p>
 
