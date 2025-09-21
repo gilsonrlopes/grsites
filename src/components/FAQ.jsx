@@ -11,7 +11,7 @@ const faqs = [
   {
     question: "O que é um site institucional?",
     answer:
-      "É um site simples que apresenta sua empresa, seus produtos ou serviços, formas de contato e, às vezes, um blog. Ele serve como cartão de visitas online, ideal para negócios que querem apenas mostrar quem são e como os clientes podem falar com eles."
+      "Um site institucional é como um catálogo online completo, com várias páginas para apresentar sua empresa (sobre nós, serviços, portfólio, blog, contato). Ele é ideal para negócios que querem transmitir profissionalismo e oferecer mais informações para seus clientes."
   },
   {
     question: "O que é uma landing page?",
@@ -26,12 +26,12 @@ const faqs = [
   {
     question: "Qual o prazo para a entrega do site?",
     answer:
-      "Sites simples podem ficar prontos em 2 a 4 semanas. Projetos maiores, como lojas virtuais, podem levar de 2 a 4 meses. Sempre combinamos o prazo antes de começar para que você saiba exatamente quando seu site ficará no ar."
+      "Sites simples podem ficar prontos em até 7. Projetos maiores, como lojas virtuais, podem levar de 7 a 30 dias. Sempre combinamos o prazo antes de começar para que você saiba exatamente quando seu site ficará no ar."
   },
   {
     question: "O que é domínio e hospedagem? Eu preciso disso?",
     answer:
-      "O domínio é o nome do seu site (por exemplo, www.suaempresa.com.br). A hospedagem é o 'lugar' onde seu site fica guardado na internet. Sem eles, o site não aparece para ninguém. Mas pode ficar tranquilo, nós ajudamos a registrar e configurar tudo para você."
+      "O domínio é o nome do seu site (por exemplo, www.suaempresa.com.br). A hospedagem é o 'lugar' onde seu site fica guardado na internet. Sem eles, o site não aparece para ninguém. Mas pode ficar tranquilo, nós iremos  registrar e configurar tudo para você."
   },
   {
     question: "O que é um site responsivo e por que isso importa?",

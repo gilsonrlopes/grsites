@@ -30,7 +30,7 @@ const Hero = () => {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-5xl lg:text-7xl font-bold mb-6 leading-tight"
             >
-              Seu Negócio BBB
+              Seu Negócio
               <span className="block text-yellow-300">Merece Ser</span>
               <span className="block">Encontrado!</span>
             </motion.h1>
