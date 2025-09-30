@@ -2,37 +2,64 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="generator" content="Gr Sites" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0X3EP0M0TM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- 🚀 OTIMIZAÇÕES DE PERFORMANCE (DEVE ESTAR NO TOPO DO <HEAD>) -->
 
-  gtag('config', 'G-0X3EP0M0TM');
-</script>
+    <!-- 1. PRÉ-CONEXÃO (TTFB): Prepara a conexão com o Google Fonts e G-Tag -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- 2. PRÉ-CARREGAMENTO DE FONTE: Carrega a fonte Inter para o LCP -->
+    <!-- Ajuste 'Inter' para o nome da fonte que você realmente usa no seu CSS/Tailwind -->
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" 
+      rel="stylesheet"
+    >
 
-    <!-- Título otimizado -->
-    <title>Criação de Sites Profissionais e Landing Pages | GR Sites</title>
+    <!-- 3. OTIMIZAÇÃO LCP: Prioriza o carregamento da imagem principal do Hero -->
+    <link 
+        rel="preload" 
+        href="/google.avif" 
+        as="image" 
+        fetchpriority="high"
+    >
+    
+    <!-- ... O RESTO DO SEU CÓDIGO PERMANECE IGUAL ABAIXO ... -->
 
-    <!-- Meta description (aparece no Google) -->
+    <!-- FAVICONS -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Google tag (gtag.js) - ADIADO CORRETAMENTE -->
+    <script async defer src="https://www.googletagmanager.com/gtag/js?id=G-0X3EP0M0TM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-0X3EP0M0TM');
+    </script>
+
+    <!-- Título otimizado e Metatags -->
+    <title>Criação de Sites Profissionais | GR Sites</title>
     <meta name="description" content="Criação de sites profissionais, landing pages e sites modernos para empresas que querem vender mais e ter presença online. GR Sites: performance, design e resultados." />
-
-    <!-- Palavras-chave -->
     <meta name="keywords" content="criação de sites profissionais, desenvolvimento de sites, criação de landing page, site institucional, site moderno, site responsivo, empresa de criação de sites, contratar desenvolvedor de sites, site para empresas" />
 
     <!-- Open Graph (para redes sociais) -->
     <meta property="og:title" content="GR Sites - Criação de Sites Profissionais e Landing Pages" />
     <meta property="og:description" content="Sites modernos, rápidos e otimizados para SEO. Criação de sites profissionais para empresas e empreendedores." />
-    <meta property="og:image" content="https://seudominio.com/imagem.png" />
-    <meta property="og:url" content="https://seudominio.com/" />
+    <meta property="og:image" content="https://www.grsites.com.br/logoshare.png" />
+    <meta property="og:url" content="https://www.grsites.com.br/" />
     <meta property="og:type" content="website" />
 
-	<script type="application/ld+json">
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -63,14 +90,13 @@
     }
   ]
 }
-</script>
+    </script>
 
 
-    <script type="module" crossorigin src="/assets/index-11db88ab.js"></script>
-    <link rel="stylesheet" href="/assets/index-d4ea8163.css">
+    <script type="module" crossorigin src="/assets/index-DUoxNQVc.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CZW0RyJH.css">
   </head>
   <body>
-    <div id="root"></div>
-    
+    <div id="root"></div>
   </body>
 </html>

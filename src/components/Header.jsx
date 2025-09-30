@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Menu, X, Globe, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 
@@ -8,8 +8,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleContact = () => {
+    // Abre o WhatsApp em uma nova aba
     window.open("https://wa.me/5541999372194", "_blank");
-    
   };
 
   const scrollToSection = (sectionId) => {
@@ -25,18 +25,22 @@ const Header = () => {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="fixed top-0 w-full z-50 glass-effect"
+      // Glass effect e fixação
+      className="fixed top-0 w-full z-50 bg-black/50 backdrop-blur-md shadow-lg"
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="flex items-center space-x-2"
-            >
-              <img src="/Logowhitebig.png" alt="Logo da GR Sites"
-              className="h-auto max-h-[50px] object contain"
-              />
-          
+            onClick={() => scrollToSection('inicio')}
+            className="flex items-center space-x-2 cursor-pointer"
+          >
+            {/* Logo otimizado */}
+            <img 
+              src="/logoheader.webp" 
+              alt="Logo da GR Sites"
+              className="h-auto max-h-[50px] object-contain"
+            />
             
             <span className="text-2xl font-bold text-white">GR Sites</span>
           </motion.div>
@@ -76,10 +80,11 @@ const Header = () => {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (Acessibilidade Corrigida com aria-label) */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden text-white"
+            aria-label={isMenuOpen ? "Fechar Menu" : "Abrir Menu"}
           >
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>

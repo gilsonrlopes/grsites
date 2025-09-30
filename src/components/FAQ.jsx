@@ -94,7 +94,7 @@ export default function FAQ() {
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Tire suas dúvidas sobre{" "}
-            <strong>criação de sites, landing pages e presença online</strong>.
+            <strong>criação de sites</strong>.
           </p>
         </motion.div>
 
@@ -153,10 +153,12 @@ export default function FAQ() {
             className="text-center mt-12"
           >
             <p className="text-lg text-gray-700 mb-9 mt-12">
-              Ainda tem dúvidas? Fale com nossa equipe e receba uma consultoria gratuita!
+              Se ainda tiver dúvidas, fale com nossa equipe e receba uma consultoria gratuita!
             </p>
             <a
-              href="/contato"
+              href="https://wa.me/5541999372194?text=Gostaria+de+um+orçamento+para+fazer+meu+site!"
+                target="_blank"
+                rel="noopener noreferrer"
               className="inline-block bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
             >
               Falar com um especialista

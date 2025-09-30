@@ -8,37 +8,43 @@ const Benefits = () => {
       icon: Search,
       title: "Seja Encontrado no Google",
       description: "Seu negócio aparecerá nas primeiras posições quando clientes procurarem seus produtos ou serviços.",
-      color: "bg-blue-500"
+      // A cor do ícone foi mudada de `bg-blue-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     },
     {
       icon: TrendingUp,
       title: "Aumente Suas Vendas",
       description: "Sites profissionais convertem 5x mais visitantes em clientes do que perfis em redes sociais.",
-      color: "bg-green-500"
+      // A cor do ícone foi mudada de `bg-green-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     },
     {
       icon: Clock,
       title: "Trabalhe 24/7",
       description: "Seu site vende enquanto você dorme! Receba pedidos e contatos a qualquer hora do dia.",
-      color: "bg-purple-500"
+      // A cor do ícone foi mudada de `bg-purple-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     },
     {
       icon: Shield,
       title: "Credibilidade Profissional",
       description: "Clientes confiam mais em empresas com sites profissionais. Transmita seriedade e qualidade.",
-      color: "bg-red-500"
+      // A cor do ícone foi mudada de `bg-red-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     },
     {
       icon: Smartphone,
       title: "Funciona em Qualquer Dispositivo",
       description: "Seu site se adapta perfeitamente a celulares, tablets e computadores. Nunca perca uma venda!",
-      color: "bg-yellow-500"
+      // A cor do ícone foi mudada de `bg-yellow-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     },
     {
       icon: Zap,
       title: "Resultados Rápidos",
       description: "Veja o crescimento do seu negócio em poucas semanas. Sites otimizados geram resultados imediatos.",
-      color: "bg-indigo-500"
+      // A cor do ícone foi mudada de `bg-indigo-500` para `bg-indigo-600`
+      color: "bg-gradient-to-tr from-indigo-600 to-purple-500"
     }
   ];
 
@@ -94,7 +100,7 @@ const Benefits = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-4">
               🚀 Estatística Impressionante!
             </h3>

@@ -6,9 +6,9 @@ const WhyChooseUs = () => {
   const stats = [
     {
       icon: Users,
-      number: "200+",
+      number: "100+",
       label: "Clientes Satisfeitos",
-      description: "Pequenos empresários que transformaram seus negócios"
+      description: "Empresários que transformaram seus negócios"
     },
     {
       icon: Award,
@@ -18,7 +18,7 @@ const WhyChooseUs = () => {
     },
     {
       icon: Clock,
-      number: "15",
+      number: "7",
       label: "Dias Úteis",
       description: "Tempo médio para entrega do seu site"
     },
@@ -32,8 +32,8 @@ const WhyChooseUs = () => {
 
   const differentials = [
     {
-      title: "Especialistas em Pequenos Negócios",
-      description: "Entendemos as necessidades específicas de pequenos empresários e criamos soluções sob medida."
+      title: "Especialistas em Negócios",
+      description: "Entendemos as necessidades específicas de empresários e criamos soluções sob medida."
     },
     {
       title: "Foco em Resultados",
@@ -50,7 +50,8 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    // ✅ CORREÇÃO 1: Adiciona 'overflow-x-hidden' na seção principal para eliminar rolagem lateral no mobile.
+    <section className="py-20 bg-white overflow-x-hidden">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -64,7 +65,7 @@ const WhyChooseUs = () => {
             <span className="block">GR Sites?</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Somos mais que uma agência de sites. Somos seus <strong>parceiros de crescimento!</strong>
+            Não criamos apenas sites bonitos. Criamos <strong>máquinas de vendas</strong> que trabalham 24h para você!
           </p>
         </motion.div>
 
@@ -80,7 +81,8 @@ const WhyChooseUs = () => {
               className="text-center"
             >
               <div className="bg-gradient-to-r from-blue-500 to-purple-600 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                <stat.icon className="h-8 w-8 text-white" />
+                {/* ✅ CORREÇÃO A11y: Ícone decorativo */}
+                <stat.icon className="h-8 w-8 text-white" aria-hidden="true" />
               </div>
               
               <div className="text-4xl font-bold text-gray-800 mb-2">
@@ -98,7 +100,7 @@ const WhyChooseUs = () => {
           ))}
         </div>
 
-        {/* Differentials Section */}
+        {/* Differentials Section - Imagem e Texto */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -106,10 +108,15 @@ const WhyChooseUs = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+            {/* ✅ CORREÇÃO 2: Adiciona loading="lazy" (Desempenho) e dimensões (CLS) */}
             <img
               alt="Equipe da GR Sites trabalhando em projetos de sites"
               className="rounded-2xl shadow-2xl w-full"
-             src="https://images.unsplash.com/photo-1627599936744-51d288f89af4" />
+              src="/team.avif" 
+              loading="lazy" 
+              width={700}
+              height={450}
+            />
           </motion.div>
 
           <motion.div
@@ -146,13 +153,12 @@ const WhyChooseUs = () => {
           viewport={{ once: true }}
           className="text-center mt-16"
         >
-          <div className="bg-gradient-to-r from-green-500 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-indigo-500 to-purple-600 rounded-2xl p-8 text-white">
             <h3 className="text-3xl font-bold mb-4">
               💡 Nossa Missão
             </h3>
             <p className="text-xl leading-relaxed max-w-4xl mx-auto">
-              Democratizar o acesso ao mundo digital para pequenos empresários, 
-              oferecendo soluções profissionais que realmente fazem a diferença no crescimento dos negócios.
+              Fazer empresários <strong>venderem mais online</strong>, criando sites profissionais que transformam visitantes em clientes reais.
             </p>
           </div>
         </motion.div>
