@@ -20,8 +20,8 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Cansado de Perder Vendas? | GR Sites Cria Sites que FATURAM</title>
-        <meta name="description" content="Pare de perder clientes para a concorrência! A GR Sites cria sites que vendem 24h por dia e aparecem no Google. Transforme cliques em vendas. Solicite seu orçamento personalizado!" />
+        <title>Criação de Sites Profissionais | Atraia Clientes e Gere Negócios </title>
+        <meta name="description" content="Seus clientes já buscam seu serviço no Google. Sem site, eles não encontram você e acham seu concorrente. Solicite agora seu orçamento personalizado!" />
       </Helmet>
       
       <div className="min-h-screen">
